@@ -50,10 +50,5 @@ while True:
         d2beta = d2beta + x_i_2*exp_b_x/((1+exp_b_x)*(1+exp_b_x))
     beta = beta - np.dot(np.linalg.inv(d2beta),dbeta).T
 
-#    print(u'迭代次数=>')
-#    print(n)
-#    print(u'β=>')
-#    print(beta)
-#    print('==================\n')
 if __name__ == '__main__':
     print(beta)
